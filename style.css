@@ -1,0 +1,236 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f7f7f7, #e3e3e3);
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+    clip-path: ellipse(100% 100% at 50% 0%);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffd700;
+}
+
+/* Section Styling */
+section {
+    padding: 2.5rem 1rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #182848;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+section h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #4b6cb7;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #f4f4f4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects Section */
+.project-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #4b6cb7;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-left: 4px solid #ffd700;
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: 600;
+    color: #333;
+}
+
+form input, form textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4b6cb7;
+    outline: none;
+}
+
+form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #4b6cb7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #3a5795;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+
+    .project-card {
+        padding: 1rem;
+    }
+
+    form button {
+        font-size: 1rem;
+    }
+}
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-media a:hover {
+    color: #ffd700; /* Change color on hover */
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
